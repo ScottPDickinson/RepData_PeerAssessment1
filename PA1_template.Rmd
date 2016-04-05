@@ -4,14 +4,22 @@ output:
   html_document:
     keep_md: true
 ---
-
+```{r}
+library(dplyr)
+```
 
 ## Loading and preprocessing the data
-
+```{r}
+activity <- read.csv("activity.csv")
+activity$date <- as.Date(activity$date, '%Y-%m-%d')
+```
 
 
 ## What is mean total number of steps taken per day?
+```{r}
+# Calculate the total number of steps taken per day
 
+```
 
 
 ## What is the average daily activity pattern?
